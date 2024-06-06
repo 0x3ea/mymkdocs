@@ -1,0 +1,944 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../..">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+    
+    
+      
+        <title>XCPC - ACM Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#a" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ACM Wiki" class="md-header__button md-logo" aria-label="ACM Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ACM Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              XCPC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ACM Wiki" class="md-nav__button md-logo" aria-label="ACM Wiki" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    ACM Wiki
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    训练记录
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            训练记录
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    XCPC
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="a">A</h1>
+<p>因为只会走n+m-1补,所以只需要维护一个数的数量</p>
+<p>再加上滚动数组优化dp即可</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define endl '\n'
+using namespace std;
+typedef long long ll;
+const int N = 5e2 + 10;
+const ll mod = 998244353;
+int f[2][N][N * 2]; // i j 0
+void solve() {
+    int n, m, p, q, u, to;
+    cin &gt;&gt; n &gt;&gt; m &gt;&gt; p &gt;&gt; q;
+    vector&lt;vector&lt;int&gt;&gt; a(n + 1, vector&lt;int&gt;(m + 1));
+    for (int i = 1; i &lt;= n; i++)
+        for (int j = 1; j &lt;= m; j++)
+            cin &gt;&gt; a[i][j];
+    if (!a[1][1])
+        f[1][1][1] = 1;
+    else
+        f[1][1][0] = 1;
+    for (int i = 1; i &lt;= n; i++) {
+        u = i % 2, to = (i + 1) % 2;
+        for (int j = 1; j &lt;= m; j++) // clear
+            for (int k = 0; k &lt;= n + m - 1; k++)
+                f[to][j][k] = 0;
+
+        for (int j = 1; j &lt;= m; j++)
+            for (int k = 0; k &lt;= n + m - 1; k++) {
+                if (i + 1 &lt;= n)
+                    f[to][j][k + !a[i + 1][j]] = (f[to][j][k + !a[i + 1][j]] + f[u][j][k]) % mod;
+                if (j + 1 &lt;= m)
+                    f[u][j + 1][k + !a[i][j + 1]] = (f[u][j + 1][k + !a[i][j + 1]] + f[u][j][k]) % mod;
+            }
+    }
+    ll ans = 0;
+    for (int i = 0; i &lt;= n + m - 1; i++)
+        if (i &gt;= p &amp;&amp; n + m - 1 - i &gt;= q) {
+            ans = (ans + f[n % 2][m][i]) % mod;
+        }
+    cout &lt;&lt; ans &lt;&lt; endl;
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+    int _ = 1;
+    // cin &gt;&gt; _;
+    while (_--)
+        solve();
+    return 0;
+}
+</code></pre>
+<h1 id="b">B</h1>
+<p>每次贪心的把x/y加入,然后类似求gcd的做法</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define endl '\n'
+using namespace std;
+typedef long long ll;
+const int N = 1e5 + 100;
+void solve() {
+    ll x, y, t;
+    cin &gt;&gt; x &gt;&gt; y;
+    vector&lt;int&gt; ans;
+    while (x % y != 0) {
+        t = x % y;
+        ans.push_back(x / y);
+        x = y;
+        y = t;
+    }
+    ans.push_back(x / y);
+    cout &lt;&lt; (int)ans.size() - 1 &lt;&lt; &quot; &quot;;
+    for (auto i : ans)
+        cout &lt;&lt; i &lt;&lt; &quot; &quot;;
+    cout &lt;&lt; endl;
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+    int _ = 1;
+    cin &gt;&gt; _;
+    while (_--)
+        solve();
+    return 0;
+}
+</code></pre>
+<h1 id="c">C</h1>
+<pre><code class="language-cpp">to be update
+</code></pre>
+<h1 id="d">D</h1>
+<pre><code class="language-cpp">to be update
+</code></pre>
+<h1 id="e">E</h1>
+<pre><code class="language-cpp">to be update
+</code></pre>
+<h1 id="f">F</h1>
+<p>高精度+dp</p>
+<p>先预处理出三个底座的汉诺塔就可以求了</p>
+<p>$f4[i]=min(2*f[i-j]+f3[j])$</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define endl '\n'
+using namespace std;
+typedef long long ll;
+typedef pair&lt;int, int&gt; pii;
+const int N = 1e4 + 10, M = 170;
+const ll mod = 998244353;
+const int LEN = 100009;
+struct bign {
+    vector&lt;short&gt; a;
+    int sign;
+    bign() : sign(1) {}
+    bign(ll num) : sign(1) { *this = num; }
+    bign(string &amp;s) : sign(1) {
+        for (int i = (int)s.size() - 1; i &gt;= 0; i--)
+            a.push_back(s[i] - '0');
+    }
+    bign &amp;up() {
+        while (a.size() &gt; 1 &amp;&amp; !a.back())
+            a.pop_back(); // 去除前导零
+        for (int i = 1; i &lt; a.size(); i++) {
+            a[i] += a[i - 1] / 10;
+            a[i - 1] %= 10;
+        }
+        while (a.back() &gt;= 10) {
+            a.push_back(a.back() / 10);
+            a[(int)a.size() - 2] %= 10;
+        }
+        return *this;
+    }
+    bign operator=(const bign T) {
+        a = T.a;
+        sign = T.sign;
+        return *this;
+    }
+    bign operator=(ll num) {
+        sign = num &lt; 0 ? -1 : 1;
+        num = abs(num);
+        a.clear();
+        while (num)
+            a.push_back(num % 10), num /= 10;
+        return *this;
+    }
+    bign &amp;operator+=(const bign &amp;T) {
+        if (a.size() &lt; T.a.size())
+            a.resize(T.a.size());
+        for (int i = 0; i &lt; T.a.size(); i++)
+            a[i] += T.a[i];
+        return this-&gt;up();
+    }
+    bign operator+(const bign &amp;T) const {
+        if (this-&gt;sign != T.sign) {
+            if (this-&gt;sign == -1) {
+                return T + *this;
+            } else {
+                return *this - T;
+            }
+        }
+        bign ans;
+        ans.sign = T.sign;
+        ans.a.resize(max(a.size(), T.a.size()));
+        for (int i = 0; i &lt; max(a.size(), T.a.size()); i++) {
+            if (i &lt; a.size())
+                ans.a[i] += a[i];
+            if (i &lt; T.a.size())
+                ans.a[i] += T.a[i];
+        }
+        return ans.up();
+    }
+    bign operator*(const bign &amp;T) const {
+        bign ans;
+        ans.a.resize(a.size() + T.a.size());
+        for (int i = 0; i &lt; T.a.size(); i++)
+            for (int j = 0; j &lt; a.size(); j++)
+                ans.a[i + j] += (a[j] * T.a[i]);
+        return ans.up();
+    }
+    bign operator-(const bign &amp;T) const {
+        bign ans;
+        if (*this &lt; T) {
+            ans = T - *this;
+            ans.sign = -1;
+        } else {
+            for (int i = 0, t = 0; i &lt; a.size(); i++) {
+                t = a[i] - t;
+                if (i &lt; T.a.size())
+                    t -= T.a[i];
+                ans.a.push_back((t + 10) % 10);
+                if (t &lt; 0)
+                    t = 1;
+                else
+                    t = 0;
+            }
+        }
+        return ans.up();
+    }
+    bign operator/(const bign &amp;T) const {
+        ll i, j;
+        bign ans = 0, c = *this;
+        for (i = (int)a.size() - 1; i &gt;= 0; i--) {
+            ans = ans * 10 + a[i];
+            for (j = 0; j &lt; 10; j++)
+                if (ans &lt; T * (j + 1))
+                    break;
+            c.a[i] = j;
+            ans = ans - T * j;
+        }
+        return c.up();
+    }
+    bign operator%(const bign &amp;T) {
+        int i, j;
+        bign ans = 0;
+        for (i = (int)a.size() - 1; i &gt;= 0; i--) {
+            ans = ans * 10 + a[i];
+            for (j = 0; j &lt; 10; j++)
+                if (ans &lt; T * (j + 1))
+                    break;
+            ans = ans - T * j;
+        }
+        return ans;
+    }
+    bool operator&lt;(const bign &amp;T) const {
+        if (a.size() != T.a.size())
+            return a.size() &lt; T.a.size();
+        for (int i = a.size() - 1; i &gt;= 0; --i)
+            if (a[i] != T.a[i])
+                return a[i] &lt; T.a[i];
+        return 0;
+    }
+    bool operator&gt;(const bign &amp;T) const { return T &lt; *this; }
+    bool operator&lt;=(const bign &amp;b) const { return !(b &lt; *this); }
+    bool operator&gt;=(const bign &amp;b) const { return !(*this &lt; b); }
+    bool operator!=(const bign &amp;b) const { return b &lt; *this || *this &lt; b; }
+    bool operator==(const bign &amp;b) const { return !(b &lt; *this) &amp;&amp; !(b &gt; *this); }
+
+    bool operator&gt;(bign &amp;T) {
+        return T &lt; *this;
+    }
+    friend istream &amp;operator&gt;&gt;(istream &amp;is, bign &amp;T) {
+        string s;
+        is &gt;&gt; s;
+        T.a.clear();
+        if (s[0] == '-')
+            T.sign = -1;
+        for (int i = (int)s.size() - 1; i &gt;= (T.sign != 1); i--)
+            T.a.push_back(s[i] - '0');
+        return is;
+    }
+    friend ostream &amp;operator&lt;&lt;(ostream &amp;os, const bign &amp;T) {
+        if (T.sign == -1)
+            os &lt;&lt; '-';
+        for (int i = (int)T.a.size() - 1; i &gt;= 0; i--)
+            os &lt;&lt; T.a[i];
+        return os;
+    }
+};
+bign f4[N], f3[N];
+void solve() {
+    int n;
+    cin &gt;&gt; n;
+    cout &lt;&lt; f4[n] &lt;&lt; endl;
+    // bign a, b;
+    // cin &gt;&gt; a &gt;&gt; b;
+    // cout &lt;&lt; min(a, b) &lt;&lt; endl;
+}
+int main() {
+
+    f3[1] = 1;
+    for (int i = 2; i &lt;= 200; i++)
+        f3[i] = f3[i - 1] * 2 + 1;
+    // cout &lt;&lt; endl;
+    f4[1] = 1;
+    bign two = 2;
+    for (int i = 2; i &lt;= 1e4; i++) {
+        f4[i] = -1;
+        for (int j = 1; j &lt;= min(i - 1, 200); j++)
+            if (f4[i] == -1)
+                f4[i] = two * f4[i - j] + f3[j];
+            else
+                f4[i] = min(f4[i], two * f4[i - j] + f3[j]);
+    }
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+    int _ = 1;
+    cin &gt;&gt; _;
+    while (_--)
+        solve();
+    return 0;
+}
+</code></pre>
+<h1 id="g">G</h1>
+<p>求能整除区间内数最多的数</p>
+<p>也就是求区间出现最多的质因数,一个数最多只有7个,然后问题就转化为了求区间众数,可以利用回滚莫队解决</p>
+<p>跑的挺快,并没有出现题解说的卡常情况?</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define endl '\n'
+#define x first
+#define y second
+#define sum(x) (a[x].sum)
+#define tag(x) (a[x].t)
+#define ls(x) (a[x].l)
+#define rs(x) (a[x].r)
+using namespace std;
+typedef long long ll;
+typedef pair&lt;int, int&gt; pii;
+typedef pair&lt;ll, ll&gt; pll;
+typedef double db;
+const ll mod = 998244353;
+const int N = 5e4 + 100, M = 1e6 + 100;
+vector&lt;int&gt; pr;
+int cnt[M], cnt1[M];
+void solve() {
+    int n, q;
+    cin &gt;&gt; n &gt;&gt; q;
+    vector&lt;array&lt;int, 3&gt;&gt; qry(q);
+    vector&lt;int&gt; ans(q), l(n + 1), r(n + 1), bel(n + 1, 0);
+    const int B = sqrt(q) + 1;
+
+    vector&lt;vector&lt;int&gt;&gt; fac(n + 1);
+    for (int i = 1; i &lt;= n; i++) {
+        bel[i] = (i - 1) / B + 1;
+        fac[i].clear();
+        int x;
+        cin &gt;&gt; x;
+        for (auto p : pr)
+            if (x % p == 0) {
+                fac[i].push_back(p);
+                while (x % p == 0)
+                    x /= p;
+            }
+
+        if (x &gt; 1)
+            fac[i].push_back(x);
+    }
+    int tot = n / B;
+    for (int i = 1; i &lt;= tot; i++) {
+        if (i * B &gt; n)
+            break;
+        l[i] = (i - 1) * B + 1;
+        r[i] = i * B;
+    }
+    if (r[tot] &lt; n)
+        tot++, l[tot] = r[tot - 1] + 1, r[tot] = n;
+    for (int i = 0; i &lt; q; i++) {
+        int l, r;
+        cin &gt;&gt; l &gt;&gt; r;
+        qry[i] = {l, r, i};
+    }
+    sort(qry.begin(), qry.end(), [&amp;](array&lt;int, 3&gt; &amp;a, array&lt;int, 3&gt; &amp;b) {
+        if (bel[a[0]] != bel[b[0]])
+            return bel[a[0]] &lt; bel[b[0]];
+        return a[1] &lt; b[1];
+    });
+
+    int L = r[bel[qry[0][0]]] + 1;
+    int R = r[bel[qry[0][0]]];
+    int now = r[bel[qry[0][0]]];
+    int res = 0;
+    auto add = [&amp;](int x) -&gt; void {
+        for (auto p : fac[x])
+            cnt[p]++, res = max(res, cnt[p]);
+    };
+    auto del = [&amp;](int x) -&gt; void {
+        for (auto p : fac[x])
+            cnt[p]--;
+    };
+    for (int i = 0; i &lt; q; i++) {
+
+        if (bel[qry[i][0]] == bel[qry[i][1]]) // 询问在同一块内,暴力求解
+        {
+            int tmp = 0;
+            for (int j = qry[i][0]; j &lt;= qry[i][1]; j++)
+                for (auto p : fac[j])
+                    cnt1[p]++, tmp = max(tmp, cnt1[p]);
+
+            ans[qry[i][2]] = tmp;
+            for (int j = qry[i][0]; j &lt;= qry[i][1]; j++)
+                for (auto p : fac[j])
+                    cnt1[p]--;
+            continue;
+        }
+        if (now ^ bel[qry[i][0]]) // 需要更新,新的块
+        {
+            // L=r[bel[qry[i][0]]] + 1  R=r[bel[qry[i][0]]]
+            while (R &gt; r[bel[qry[i][0]]])
+                del(R), R--;
+            while (L &lt; r[bel[qry[i][0]]] + 1)
+                del(L), L++;
+            res = 0, now = bel[qry[i][0]];
+        }
+        while (R &lt; qry[i][1])
+            add(++R);
+        int tmp = res, l1 = L;
+        while (l1 &gt; qry[i][0])
+            add(--l1);
+        ans[qry[i][2]] = res;
+        while (l1 &lt; L)
+            del(l1), l1++;
+        res = tmp;
+    }
+    for (auto i : ans)
+        cout &lt;&lt; i &lt;&lt; endl;
+    while (L &lt;= R)
+        del(L), L++;
+}
+int main() {
+    auto getpr = [&amp;](int n) -&gt; void {
+        vector&lt;bool&gt; notpr(n + 10);
+        for (int i = 2; i &lt;= n; i++) {
+            if (!notpr[i])
+                pr.push_back(i);
+            for (auto p : pr) {
+                if (i * p &gt; n)
+                    break;
+                notpr[i * p] = 1;
+                if (i % p == 0)
+                    break;
+            }
+        }
+    };
+    getpr(1e3);
+    cout &lt;&lt; setiosflags(ios::fixed) &lt;&lt; setprecision(10);
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+    int _ = 1;
+    cin &gt;&gt; _;
+    while (_--)
+        solve();
+    return 0;
+}
+</code></pre>
+<h1 id="h">H</h1>
+<p>神秘结论</p>
+<p>1.如果A第一轮扣血扣死,B赢</p>
+<p>2.B第一轮被打死或只剩一点,A赢</p>
+<p>3.其他情况B赢,无论A怎么操作,B操作完后,A一定和B血量一样</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define endl '\n'
+using namespace std;
+typedef long long ll;
+const int N = 5e2 + 10;
+const ll mod = 998244353;
+void solve() {
+    int x, y;
+    cin &gt;&gt; x &gt;&gt; y;
+    if (x &gt;= y + 2 || x == 1)
+        cout &lt;&lt; &quot;freesin&quot; &lt;&lt; endl;
+    else
+        cout &lt;&lt; &quot;pllj&quot; &lt;&lt; endl;
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+    int _ = 1;
+    cin &gt;&gt; _;
+    while (_--)
+        solve();
+    return 0;
+}
+</code></pre>
+<h1 id="j">J</h1>
+<p>二分答案</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define endl '\n'
+using namespace std;
+typedef long long ll;
+typedef pair&lt;int, int&gt; pii;
+const int N = 5e2 + 10;
+const ll mod = 998244353;
+void solve() {
+    int n, k;
+    cin &gt;&gt; n &gt;&gt; k;
+    vector&lt;int&gt; a(n + 1);
+    vector&lt;int&gt; vis(n + 1);
+    for (int i = 1; i &lt;= n; i++)
+        cin &gt;&gt; a[i];
+    auto chk = [&amp;](int x) -&gt; bool {
+        set&lt;pii&gt; s;
+        map&lt;int, int&gt; mp;
+        int ok = 0;
+        for (int i = 1; i &lt;= n; i++) {
+            int req = a[i];
+            if (s.find({mp[req], req}) != s.end()) {
+                s.erase({mp[req], req});
+                mp[req] = i;
+                s.insert({mp[req], req});
+                ok++;
+            } else {
+                if (s.size() &lt; x)
+                    mp[req] = i, s.insert({mp[req], req});
+                else {
+                    auto t = s.begin();
+                    s.erase(t);
+                    mp[req] = i, s.insert({mp[req], req});
+                }
+            }
+        }
+        return ok &gt;= k;
+    };
+    int l = 1, r = n;
+    while (l &lt; r) {
+        int mid = l + r &gt;&gt; 1;
+        if (chk(mid))
+            r = mid;
+        else
+            l = mid + 1;
+    }
+    if (chk(l))
+        cout &lt;&lt; l &lt;&lt; endl;
+    else
+        cout &lt;&lt; &quot;cbddl&quot; &lt;&lt; endl;
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+    int _ = 1;
+    // cin &gt;&gt; _;
+    while (_--)
+        solve();
+    return 0;
+}
+</code></pre>
+<h1 id="k">K</h1>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define endl '\n'
+using namespace std;
+typedef long long ll;
+void solve() {
+    ll n, m;
+    cin &gt;&gt; n &gt;&gt; m;
+    ll ans = 0;
+    for (ll i = 1; i &lt;= n; i++)
+        ans += i * i * m;
+    cout &lt;&lt; ans &lt;&lt; endl;
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+    int _ = 1;
+    cin &gt;&gt; _;
+    while (_--)
+        solve();
+    return 0;
+}
+</code></pre>
+<h1 id="l">L</h1>
+<p>注意到只与x有关,差分前缀和即可</p>
+<pre><code class="language-cpp">#include &lt;bits/stdc++.h&gt;
+#define endl '\n'
+using namespace std;
+typedef long long ll;
+const int N = 1e5 + 100;
+void solve() {
+    int n;
+    cin &gt;&gt; n;
+    vector&lt;int&gt; s(N, 0);
+    for (int i = 1; i &lt;= n; i++) {
+        int x1, y1, x2, y2;
+
+        cin &gt;&gt; x1 &gt;&gt; y1 &gt;&gt; x2 &gt;&gt; y2;
+        s[x1]++, s[x2]--;
+    }
+    int ans = 0;
+    for (int i = 1; i &lt;= 1e5; i++) {
+        s[i] += s[i - 1];
+        if (s[i])
+            ans++;
+    }
+    cout &lt;&lt; ans &lt;&lt; endl;
+}
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0), cout.tie(0);
+    int _ = 1;
+    // cin &gt;&gt; _;
+    while (_--)
+        solve();
+    return 0;
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      
+    
+  </body>
+</html>
